@@ -1,0 +1,25 @@
+.header-container {
+    width: 100vw;
+    height: 100vh;
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), 
+      url('src/assets/header-bg.jpg'); /* Replace with your background image */
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.header-title {
+    color: white;
+    font-size: 45px;
+}
+
+.header-desc {
+    color: white;
+}
