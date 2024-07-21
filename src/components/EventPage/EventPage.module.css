@@ -115,7 +115,10 @@
   z-index: 999;
 }
 
-#close-btn {
-  border: black;
-  margin-top: 2rem;
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
 }
