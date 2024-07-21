@@ -27,3 +27,10 @@
     "vite": "^5.3.4"
   }
 }
+
+
+
+
+
+// Using the Package JSON File provides the necessary Package Dependicies 
+// Can be installed via   npm install   in the command line
