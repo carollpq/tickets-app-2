@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header/Header'
+import React from 'react';
+import Header from './components/Header/Header';
+import EventDetail from './components/EventPage/EventDetail';
+import TicketPurchase from './components/EventPage/TicketPurchase';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Header />
-    </>
-  )
-}
+    <div>
+      <header className="header-container">
+        {/* Include the header component here */}
+      </header>
+      <main>
+        <Header></Header>
+        <EventDetail />
+      </main>
+    </div>
+  );
+};
 
-export default App
+export default App;
