@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './EventPage.module.css';
 
-const TicketPurchase = () => {
+const TicketPurchase = ({price}) => {
   const handleBuy = () => {
     alert('Proceed to checkout!');
     // Simulate a purchase action
@@ -9,8 +9,8 @@ const TicketPurchase = () => {
 
   return (
     <>
-        <div className={style['purchase-container']}>
-            <h2 className={style['price']}>24.99</h2>
+        <div className={style['ticket-purchase-container']}>
+            <h2 className={style['price']}>{price}</h2>
             <button onClick={handleBuy} className={style['buy-button']}>Book Now</button>
         </div>
     </>
