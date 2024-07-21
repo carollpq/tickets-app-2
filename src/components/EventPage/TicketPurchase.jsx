@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './EventPage.module.css';
 
 const TicketPurchase = ({price}) => {
+
+  const [isTicketVisible, setTicketVisible] = useState(false);
+
   const handleBuy = () => {
-    alert('Proceed to checkout!');
-    // Simulate a purchase action
+    setTicketVisible(!isTicketVisible); // Show the ticket
+
   };
 
   return (
@@ -13,6 +16,17 @@ const TicketPurchase = ({price}) => {
             <h2 className={style['price']}>{price}</h2>
             <button onClick={handleBuy} className={style['buy-button']}>Book Now</button>
         </div>
+        {isTicketVisible && (
+         <>
+         <div className={style['overlay']}></div>
+         <div className={style['ticket-popup']}>
+           <h3>Ticket Confirmation</h3>
+           <p>Price: {price}</p>
+           <p>Thank you for your purchase!</p>
+           <button id={style['close-btn']} onClick={handleBuy}>Close</button>
+         </div>
+       </>
+      )}
     </>
   );
 };

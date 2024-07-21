@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './EventPage.module.css';
-import audienceImage from '../../assets/audience.jpg'
 import TicketPurchase from './TicketPurchase';
 
 const EventDetail = ({cardImage, title, date, location, description, price}) => {
