@@ -1,18 +1,22 @@
 import React from 'react'
 import style from "./Header.module.css"
+import SearchBar from './Searchbar';
 
 const Header = () => {
   return (
-    <div className={style['header-container']}>
-        <div className={style['navbar']}>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <h1 className={style['header-title']}>Book Your Next Event With Us</h1>
-        <p className={style['header-desc']}>some dummy text idk</p>
-    </div>
-  )
+    <>
+    <header className={style['header-container']}>
+      <h1 className={style['header-logo']}>TicketBeam</h1>
+      <SearchBar/>
+      <nav className={style['nav-links']}>
+        <button>Home</button>
+        <button>Your Events</button>
+        <button>About</button>
+        <button>Contact us</button>
+      </nav>
+    </header>
+    </>
+  );
 }
 
 export default Header
