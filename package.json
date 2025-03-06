@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   "name": "tickets-app-2",
   "private": true,
@@ -32,5 +46,9 @@
 
 
 
-// Using the Package JSON File provides the necessary Package Dependicies 
-// Can be installed via   npm install   in the command line
+
+
+
+
+
+

@@ -1,5 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React from 'react';
-import style from './EventPage.module.css';
+import style from './../../styles/EventPage.module.css';
 import TicketPurchase from './TicketPurchase';
 
 const EventDetail = ({cardImage, title, date, location, description, price}) => {
@@ -18,3 +32,18 @@ const EventDetail = ({cardImage, title, date, location, description, price}) => 
 };
 
 export default EventDetail;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

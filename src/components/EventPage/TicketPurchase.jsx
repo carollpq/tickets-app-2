@@ -1,5 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from "react";
-import style from "./EventPage.module.css";
+import style from "./../../styles/EventPage.module.css";
+
+
+
+
+
+
+
 
 const TicketPurchase = ({ price }) => {
   const [isTicketVisible, setTicketVisible] = useState(false);
